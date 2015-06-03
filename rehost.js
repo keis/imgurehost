@@ -5,7 +5,7 @@ var glob = require('glob')
 
 function findImages(data) {
   var images = []
-    , p = /<img .* src="([^"]*)"/g
+    , p = /<img .*src="([^"]*)"/g
     , r
 
   while ((r = p.exec(data))) {
